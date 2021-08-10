@@ -16,16 +16,6 @@
         display: none;
       }
 
-      /* Tablets */
-      @media (min-width: 501px) and (max-width: 768px) {
-        body {
-          background: blue;
-        }
-        #tablet h1 {
-          display: block;
-        }
-      }
-
       /* Mobile devices */
       @media (max-width: 500px) {
         body {
@@ -36,6 +26,48 @@
           display: block;
         }
       }
+
+      /* Tablets */
+      @media (min-width: 501px) and (max-width: 768px) {
+        body {
+          background: blue;
+        }
+        #tablet h1 {
+          display: block;
+        }
+      }
+
+      /* Normal devices */
+      @media (min-width: 769px) and (max-width: 1200px) {
+        body {
+          background: green;
+        }
+
+        #normal h1 {
+          display: block;
+        }
+      }
+      /* wide devices */
+      @media (min-width: 1201px) {
+        body {
+          background: black;
+        }
+
+        #widescreen h1 {
+          display: block;
+        }
+      }
+
+      /* Landscape mode  */
+      @media (max-height: 500px) {
+        body {
+          background: orange;
+        }
+
+        #landscape h1 {
+          display: block;
+        }
+      }
     </style>
   </head>
   <body>
@@ -43,5 +75,6 @@
     <div id="normal"><h1>Normal</h1></div>
     <div id="tablet"><h1>Tablet</h1></div>
     <div id="smartphone"><h1>Smartphone</h1></div>
+    <div id="landscape"><h1>Landscape</h1></div>
   </body>
 </html>
